@@ -1,9 +1,38 @@
+.header {
+    background-image: url('https://wallpapers.com/images/hd/calm-waters-sunset-aesthetic-a6ceun92ch9u8g1d.jpg');
+    /* covers the entire header */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 260px;
+
+    /* centering text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    flex-direction: column;
+    color: white;
+
+}
+
+.title {
+    font-size: 48px;
+    /* removes default h1 margin */
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.sub-title {
+    font-size: 21px;
+    margin: 0;
+    font-weight: 300;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
-    background-size: 50%
-    padding: 15px;
 
 }
 
