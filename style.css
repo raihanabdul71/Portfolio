@@ -1,10 +1,53 @@
+#navbar {
+    overflow: hidden;
+    background-color: #AB85DC;
+    padding: 6px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+
+}
+
+#navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 4px;
+}
+
+#navbar #logo {
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.4s
+}
+
+#navbar a:hover {
+    background-color: #E2A9DB;
+    color: black;
+}
+
+#navbar a:active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#navbar-right {
+    float: right;
+}
+
 .header {
-    background-image: url('https://wallpapers.com/images/hd/calm-waters-sunset-aesthetic-a6ceun92ch9u8g1d.jpg');
+    background-image: url('https://cdn.shopify.com/s/files/1/0475/8513/2708/files/sebastien-gabriel--imlv9jlb24-unsplash-1.jpg?v=1734059829');
     /* covers the entire header */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 260px;
+    padding: 240px;
 
     /* centering text */
     display: flex;
@@ -16,15 +59,18 @@
 
 }
 
+
 .title {
     font-size: 48px;
     /* removes default h1 margin */
     margin: 0;
     margin-bottom: 8px;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .sub-title {
     font-size: 21px;
+    /* removes default h4 margin */
     margin: 0;
     font-weight: 300;
 }
@@ -33,6 +79,19 @@ html,
 body {
     margin: 0;
     padding: 0;
+
+}
+
+.about-me {
+    margin-top: 0px;
+    background-color: rgb(230, 109, 149);
+}
+
+.about-me p {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+
 
 }
 
