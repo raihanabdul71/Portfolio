@@ -1,11 +1,12 @@
 #navbar {
     overflow: hidden;
-    background-color: #AB85DC;
+    background-color: lightblue;
     padding: 6px;
     transition: 0.4s;
     position: fixed;
     width: 100%;
     top: 0;
+    justify-content: center;
 
 
 }
@@ -42,7 +43,8 @@
 }
 
 .header {
-    background-image: url('https://cdn.shopify.com/s/files/1/0475/8513/2708/files/sebastien-gabriel--imlv9jlb24-unsplash-1.jpg?v=1734059829');
+    background-image: url('https://wallpapercave.com/wp/wp9393115.jpg');
+    /* background-image: url('https://cdn.shopify.com/s/files/1/0475/8513/2708/files/sebastien-gabriel--imlv9jlb24-unsplash-1.jpg?v=1734059829'); */
     /* covers the entire header */
     background-size: cover;
     background-position: center;
@@ -60,7 +62,7 @@
 }
 
 
-.title {
+.display-name {
     font-size: 48px;
     /* removes default h1 margin */
     margin: 0;
@@ -84,14 +86,30 @@ body {
 
 .about-me {
     margin-top: 0px;
-    background-color: rgb(230, 109, 149);
+    background-color: #FFC198;
 }
 
-.about-me p {
+.about-me p,
+.goals p {
     font-size: 20px;
     text-align: left;
     margin-bottom: 20px;
+}
 
+.about-me img {
+    margin: auto;
+    margin-bottom: 15px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 15px #FFE100;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
 
 }
+
+.goals {
+    margin-top: 0px;
+    background-color: rgb(108, 193, 224)
+}
+
 
