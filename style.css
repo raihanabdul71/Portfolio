@@ -85,31 +85,93 @@ body {
 }
 
 .about-me {
-    margin-top: 0px;
+    /* margin-top: 0px; */
     background-color: #FFC198;
+    /* align-items: center; */
+    padding: 4rem 8%;
+    margin: 0;
 }
 
-.about-me p,
-.goals p {
-    font-size: 20px;
+.goals {
+    /* margin-top: 0px; */
+    background-color: rgb(108, 193, 224);
+    /* align-items: center; */
+    gap: 1.5rem 8% 3rem 8;
+    margin: 0;
+
+}
+
+.about-me h2,
+.goals h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: #ece9e9;
+    margin-bottom: 0.5rem;
+   
+
 }
 
-.about-me img {
-    margin: auto;
-    margin-bottom: 15px;
-    height: 300px;
+
+.about-content {
+    display: flex;
+    /* lines up top of text and image */
+    align-items: flex-start;
+    /* space between text and image */
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.goals-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.about-text,
+.goals-text {
+    /* takes up remaining space */
+    flex: 1;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p,
+.goals-text p {
+    font-size: 18px;
+    text-align: left;
+    /* removes default top margin */
+    margin: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.about-content img {
+    height: auto;
     width: 300px;
     border-radius: 50%;
     border: 15px #FFE100;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+    /* prevents image from shrinking */
+    flex-shrink: 0;
 
 }
 
-.goals {
-    margin-top: 0px;
-    background-color: rgb(108, 193, 224)
+
+.goals-content img{
+    height: auto;
+    width: 200px;
+    /* prevents image from shrinking */
+    flex-shrink: 0;
+    
 }
 
 
