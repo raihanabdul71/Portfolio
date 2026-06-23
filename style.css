@@ -11,7 +11,8 @@
 
 }
 
-#navbar a {
+#navbar a,
+#logo {
     float: left;
     color: black;
     text-align: center;
@@ -22,7 +23,7 @@
     border-radius: 4px;
 }
 
-#navbar #logo {
+#logo {
     font-size: 17px;
     font-weight: bold;
     transition: 0.4s
@@ -35,7 +36,6 @@
 
 #navbar a:active {
     background-color: dodgerblue;
-    color: white;
 }
 
 #navbar-right {
@@ -98,6 +98,7 @@ body {
     /* align-items: center; */
     gap: 1.5rem 8% 3rem 8;
     margin: 0;
+    padding-bottom: 200px;
 
 }
 
@@ -135,8 +136,19 @@ body {
     max-width: 1100px;
 }
 
+.hobbies-content {
+    display: flex;
+    /* lines up top of text and image */
+    align-items: flex-start;
+    /* space between text and image */
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
 .about-text,
-.goals-text {
+.goals-text,
+.hobbies-text {
     /* takes up remaining space */
     flex: 1;
     margin: 0;
@@ -144,7 +156,8 @@ body {
 }
 
 .about-text p,
-.goals-text p {
+.goals-text p,
+.hobbies-text p {
     font-size: 18px;
     text-align: left;
     /* removes default top margin */
