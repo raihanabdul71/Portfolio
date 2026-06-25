@@ -34,9 +34,6 @@
     color: black;
 }
 
-#navbar a:active {
-    background-color: dodgerblue;
-}
 
 #navbar-right {
     float: right;
@@ -77,6 +74,12 @@
     font-weight: 300;
 }
 
+
+html {
+    scroll-behavior: smooth;
+    scroll-margin-top: 60px;
+}
+
 html,
 body {
     margin: 0;
@@ -92,6 +95,36 @@ body {
     margin: 0;
 }
 
+.about-content {
+    display: flex;
+    /* lines up top of text and image */
+    align-items: flex-start;
+    /* space between text and image */
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.hobbies-content {
+    display: flex;
+    /* lines up top of text and image */
+    align-items: flex-start;
+    /* space between text and image */
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.about-content img {
+    height: auto;
+    width: 300px;
+    border-radius: 50%;
+    border: 15px #FFE100;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+    /* prevents image from shrinking */
+    flex-shrink: 0;
+}
+
 .goals {
     /* margin-top: 0px; */
     background-color: #5cb2af;
@@ -99,16 +132,51 @@ body {
     /* align-items: center; */
     gap: 1.5rem 8% 3rem 8;
     margin: 0;
-    padding-bottom: 180px;
+    padding-bottom: 130px;
 
+}
+
+.goals-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.goals-content img{
+    height: auto;
+    width: 200px;
+    /* prevents image from shrinking */
+    flex-shrink: 0;
+    
 }
 
 .knowledge {
     background-color: #fbd7a7;
     padding: 4rem 8%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 0;
+}
+
+.knowledge-content {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    /* space between cards */
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1100px;
+    /* stack on mobile */
+    flex-wrap: wrap;
+}
+
+.knowledge h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .knowledge h4 {
@@ -121,82 +189,6 @@ body {
     font-weight: 300;
     color: #3b7e9b;
     margin-bottom: 0.5rem;
-}
-
-.about-me h2,
-.goals h2 {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 30px;
-    font-style: italic;
-    margin: 0;
-    text-align: left;
-    margin-bottom: 1rem;
-    font-weight: 300;
-    color: #ece9e9;
-    margin-bottom: 0.5rem;
-   
-
-}
-
-
-.about-content {
-    display: flex;
-    /* lines up top of text and image */
-    align-items: flex-start;
-    /* space between text and image */
-    gap: 3rem;
-    margin: 0 auto;
-    max-width: 1100px;
-}
-
-.goals-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-    margin: 0 auto;
-    max-width: 1100px;
-}
-
-
-.hobbies-content {
-    display: flex;
-    /* lines up top of text and image */
-    align-items: flex-start;
-    /* space between text and image */
-    gap: 3rem;
-    margin: 0 auto;
-    max-width: 1100px;
-}
-
-.knowledge-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-    margin: 0 auto;
-    max-width: 1100px;
-}
-
-
-.about-text,
-.goals-text,
-.hobbies-text, 
-.knowledge-text {
-    /* takes up remaining space */
-    flex: 1;
-    margin: 0;
-    margin-bottom: 1.5rem;
-}
-
-.about-text p,
-.goals-text p,
-.hobbies-text p {
-    font-size: 18px;
-    text-align: left;
-    /* removes default top margin */
-    margin: 0;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    flex: 1;
 }
 
 .knowledge-text p {
@@ -214,24 +206,69 @@ body {
     padding-left: 15px;
 }
 
-.about-content img {
-    height: auto;
-    width: 300px;
-    border-radius: 50%;
-    border: 15px #FFE100;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
-    /* prevents image from shrinking */
-    flex-shrink: 0;
+.skill-card {
+    flex: 1;
+    max-width: 300px;
+    min-width: 250px;
+}
 
+.skill-icon {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-icon img {
+    width: 50px;
+    height: 50px;
 }
 
 
-.goals-content img{
-    height: auto;
-    width: 200px;
-    /* prevents image from shrinking */
-    flex-shrink: 0;
-    
+
+hr.small {
+    width: 50px;
+    border: 1px solid white;
+    margin: 0 auto 3rem auto;
+}
+
+.about-text,
+.goals-text,
+.hobbies-text {
+    /* takes up remaining space */
+    flex: 1;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.about-me h2,
+.goals h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: #ece9e9;
+    margin-bottom: 0.5rem;
+}
+
+
+.about-text p,
+.goals-text p,
+.hobbies-text p {
+    font-size: 18px;
+    text-align: left;
+    /* removes default top margin */
+    margin: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex: 1;
 }
 
 
