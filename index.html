@@ -26,6 +26,11 @@
 <!-- Homepage -->
         <h1 class="display-name"> Raihana Abdul </h1>
         <h4 class="sub-title"> Hello! Welcome to my portfolio</h4>
+
+        <div class="buttons">
+            <button class="option-one"> Explore </button>
+        </div>
+
     </div>
     
     <!-- About me & Hobbies -->
@@ -89,6 +94,7 @@
         </div>
     </div>    
 
+    <!-- Projects -->
     <div class="projects" id="projects">
         <h2> My Projects </h2>
         <hr class="small">
@@ -101,6 +107,7 @@
 
     </div>
 
+    <!-- Contact -->
     <div class="contact" id="contact">
         <h2> Contact Me </h2>
         <hr class="small">
@@ -109,8 +116,26 @@
             <div class="contact-text">
                 <p> If you would like to contact me, please feel free to reach out to me through my email by leaving a message in the form below. I will try to respond as soon as possible. </p>
             </div>
-            
-    </div>           
+        
+            <div class="contact-form">
+                <form>
+                    <label for ="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for ="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for ="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>    
+        </div>
+    </div>  
+    
+    
+
 </body>
 
 </html>

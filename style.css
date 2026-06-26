@@ -30,7 +30,7 @@
 }
 
 #navbar a:hover {
-    background-color: #E2A9DB;
+    background-color: #8475fa;
     color: black;
 }
 
@@ -41,7 +41,6 @@
 
 .header {
     background-image: url('https://wallpapercave.com/wp/wp9393115.jpg');
-    /* background-image: url('https://cdn.shopify.com/s/files/1/0475/8513/2708/files/sebastien-gabriel--imlv9jlb24-unsplash-1.jpg?v=1734059829'); */
     /* covers the entire header */
     background-size: cover;
     background-position: center;
@@ -54,8 +53,7 @@
     align-items: center;
     flex-direction: center;
     flex-direction: column;
-    color: white;
-
+    color: rgb(160, 89, 89);
 }
 
 
@@ -73,6 +71,36 @@
     margin: 0;
     font-weight: 300;
 }
+
+.buttons {
+    margin: 20px;
+}
+
+.option-one {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #223057;
+    color: #fff;
+    border: none ridge;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Bitcount Single", systen-ui;
+}
+
+.option-one:hover {
+    background-color: #9A1316;
+}
+
+/* .option-one {
+    background-color: transparent;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
 
 
 html {
@@ -242,13 +270,6 @@ body {
     height: 60px;
 }
 
-
-hr.small {
-    width: 180px;
-    border: 1px solid white;
-    margin: 0 auto 3rem auto;
-}
-
 .projects {
     background-color: #5cb2af;
     padding: 4rem 8%;
@@ -265,6 +286,42 @@ hr.small {
     padding-bottom: 7px;
     margin: 0;
     text-align: center;
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    /* centering the form container horizontally */
+    margin: 10 auto;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #fff;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 .about-text,
@@ -300,5 +357,9 @@ hr.small {
     flex: 1;
 }
 
-
+hr.small {
+    width: 180px;
+    border: 1px solid white;
+    margin: 0 auto 3rem auto;
+}
 
