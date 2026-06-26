@@ -228,8 +228,8 @@ body {
 
 .skill-icon {
     background-color: white;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin: 0 auto 1rem auto;
     display: flex;
@@ -238,16 +238,33 @@ body {
 }
 
 .skill-icon img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
-
 
 
 hr.small {
     width: 180px;
     border: 1px solid white;
     margin: 0 auto 3rem auto;
+}
+
+.projects {
+    background-color: #5cb2af;
+    padding: 4rem 8%;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    margin: 0;
+    text-align: center;
+}
+
+.contact {
+    background-color: #FFC198;
+    padding: 4rem 8%;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    margin: 0;
+    text-align: center;
 }
 
 .about-text,
