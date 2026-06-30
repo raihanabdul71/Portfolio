@@ -1,6 +1,6 @@
 #navbar {
     overflow: hidden;
-    background-color: lightblue;
+    background-color: #3d6e58;
     padding: 6px;
     transition: 0.4s;
     position: fixed;
@@ -13,7 +13,6 @@
 
 #navbar a,
 #logo {
-    float: left;
     color: black;
     text-align: center;
     padding: 12px;
@@ -24,23 +23,25 @@
 }
 
 #logo {
+    float: left;
     font-size: 17px;
     font-weight: bold;
     transition: 0.4s
 }
 
 #navbar a:hover {
-    background-color: #8475fa;
+    background-color: #71acd3;
     color: black;
 }
 
 
 #navbar-right {
     float: right;
+    margin-top: 10px;
 }
 
 .header {
-    background-image: url('https://wallpapercave.com/wp/wp9393115.jpg');
+    background-image: url('https://wallpapercave.com/wp/wp14679398.jpg');
     /* covers the entire header */
     background-size: cover;
     background-position: center;
@@ -51,10 +52,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: center;
     flex-direction: column;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: #F8F5E4;
+    text-shadow: 2px 2px 4px rgba(45, 45, 42, 0.8);
 }
 
 
@@ -81,8 +81,8 @@
     font-size: 16px;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #223057;
-    color: #fff;
+    background-color: #E08D79;
+    color: #2D2D2A;
     border: none ridge;
     border-radius: 5px;
     cursor: pointer;
@@ -91,34 +91,27 @@
 }
 
 .option-one:hover {
-    background-color: #9A1316;
+    background-color: #9A3B3B;
 }
 
-/* .option-one {
-    background-color: transparent;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-} */
 
-
-html {
+html,
+body {
     scroll-behavior: smooth;
     scroll-margin-top: 60px;
 }
 
-html,
 body {
     margin: 0;
     padding: 0;
+    background-color: #F8F5E4;
+    color: #2D2D2A;
 
 }
 
 .about-me {
     /* margin-top: 0px; */
-    background-color: #FFC198;
+    background-color: #F5D7B6;
     /* align-items: center; */
     padding: 4rem 8%;
     margin: 0;
@@ -145,8 +138,8 @@ body {
 }
 
 .about-content img {
-    height: auto;
-    width: 300px;
+    height: 380px;
+    width: 320px;
     border-radius: 50%;
     border: 15px #FFE100;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
@@ -156,7 +149,7 @@ body {
 
 .goals {
     /* margin-top: 0px; */
-    background-color: #5cb2af;
+    background-color: #6B9080;
     /* background-color: rgb(108, 193, 224); */
     /* align-items: center; */
     gap: 1.5rem 8% 3rem 8;
@@ -193,10 +186,8 @@ body {
 }
 
 .knowledge {
-    background-color: #fbd7a7;
+    background-color: #F2E3BC;
     padding: 4rem 8%;
-    padding-top: 10px;
-    padding-bottom: 7px;
     margin: 0;
 }
 
@@ -269,23 +260,78 @@ body {
 }
 
 .projects {
-    background-color: #5cb2af;
-    padding: 4rem 8%;
-    padding-top: 10px;
-    padding-bottom: 7px;
+    background-color: #A3C4BC;
+    padding: 70px 8%;
+    /* padding-top: 10px;
+    padding-bottom: 30px; */
     margin: 0;
     text-align: center;
 }
 
+.projects h2 {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.projects hr {
+    width: 100px;
+    border: 1px solid white;
+    margin: 20px auto;
+}
+
+.projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.project-card {
+    width: 45%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    margin: 0 0 10px;
+    color: black;
+}
+
+.project-info p {
+    color: black;
+    margin: 0;
+    font-size: 15px;
+}
+
 .contact {
-    background-color: #FFC198;
+    background-color: #E08D79;
     padding: 60px 8%;
     margin: 0;
     text-align: center;
 }
 
 .contact-form {
-    background-color: #f9f9f9;
+    background-color: #F8F5E4;
     border-radius: 5px;
     padding: 20px;
     width: 80%;
@@ -296,7 +342,7 @@ body {
 
 label {
     margin-bottom: 8px;
-    color: #333;
+    color: #2D2D2A;
     display: block;
     font-weight: 500;
     text-align: left;
@@ -378,4 +424,17 @@ hr.small {
     width: 180px;
     border: 1px solid white;
     margin: 20px auto;
+}
+
+.footer {
+    background-color: #3d6e58;
+    color: #F8F5E4;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.footer p {
+    margin: 0 15px 0;
+    font-size: 14px;
 }
