@@ -13,7 +13,7 @@
 
 #navbar a,
 #logo {
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -138,10 +138,10 @@ body {
 }
 
 .about-content img {
-    height: 380px;
-    width: 320px;
+    height: 360px;
+    width: 300px;
     border-radius: 50%;
-    border: 15px #FFE100;
+    border: 5px solid #3d6e58;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
     /* prevents image from shrinking */
     flex-shrink: 0;
@@ -154,7 +154,7 @@ body {
     /* align-items: center; */
     gap: 1.5rem 8% 3rem 8;
     margin: 0;
-    padding-top: 70px;
+    padding-top: 80px;
     padding-bottom: 120px;
 
 }
@@ -170,6 +170,7 @@ body {
 .goals-text p {
     font-size: 18px;
     text-align: left;
+    color: black;
     /* removes default top margin */
     margin: 0;
     margin-bottom: 1.5rem;
@@ -178,23 +179,22 @@ body {
 }
 
 .goals-content img{
-    height: auto;
-    width: 200px;
+    height: 360px;
+    width: 500px;
     /* prevents image from shrinking */
     flex-shrink: 0;
-    
+    border-radius: 3px;
 }
 
 .knowledge {
-    background-color: #F2E3BC;
-    padding: 4rem 8%;
+    background-color: #F5D7B6;
+    padding: 50px;
     margin: 0;
 }
 
 .knowledge-content {
     display: flex;
     justify-content: center;
-    /* align-items: flex-start; */
     /* space between cards */
     gap: 2rem;
     margin: 0 auto;
@@ -216,15 +216,14 @@ body {
     font-style: italic;
     margin: 0;
     text-align: left;
-    margin-bottom: 1rem;
-    font-weight: 300;
+    font-weight: 310;
     color: #3b7e9b;
     margin-bottom: 0.5rem;
 }
 
-.knowledge-text p {
-    font-size: 15px;
-
+.knowledge-content p {
+    font-size: 16px;
+    color: black;
     text-align: left;
     /* removes default top margin */
     margin: 0;
@@ -238,9 +237,9 @@ body {
 }
 
 .skill-card {
-    flex: 1;
-    max-width: 300px;
-    min-width: 250px;
+    width: 45%;
+    max-width: none;
+    min-width: 200px;
 }
 
 .skill-icon {
@@ -273,12 +272,6 @@ body {
     font-weight: 200;
     text-align: center;
     margin: 0 auto;
-}
-
-.projects hr {
-    width: 100px;
-    border: 1px solid white;
-    margin: 20px auto;
 }
 
 .projects-content {
@@ -320,7 +313,7 @@ body {
 .project-info p {
     color: black;
     margin: 0;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .contact {
@@ -328,6 +321,11 @@ body {
     padding: 60px 8%;
     margin: 0;
     text-align: center;
+}
+
+.contact-text {
+    font-size: 18px;
+    color: black;
 }
 
 .contact-form {
@@ -420,9 +418,32 @@ button:hover {
     flex: 1;
 }
 
-hr.small {
+.about-me hr {
+    width: 120px;
+    border: 1.5px solid black;
+    margin: 20px auto;
+    margin-left: 0;
+    
+}
+
+.goals hr {
+    width: 90px;
+    border: 1.5px solid black;
+    margin: 20px auto;
+    margin-left: 0;
+}
+
+.knowledge hr {
     width: 180px;
-    border: 1px solid white;
+    border: 1.5px solid black;
+    margin: 15px auto;
+
+}
+
+.projects hr,
+.contact hr {
+    width: 180px;
+    border: 1.5px solid black;
     margin: 20px auto;
 }
 
