@@ -1,6 +1,6 @@
 #navbar {
     overflow: hidden;
-    background-color: #3d6e58;
+    background-color: #406768;
     padding: 6px;
     transition: 0.4s;
     position: fixed;
@@ -82,7 +82,7 @@
     padding: 10px 20px;
     margin: 10px;
     background-color: #E08D79;
-    color: #2D2D2A;
+    color: black;
     border: none ridge;
     border-radius: 5px;
     cursor: pointer;
@@ -91,7 +91,7 @@
 }
 
 .option-one:hover {
-    background-color: #9A3B3B;
+    background-color: #c45b5b;
 }
 
 
@@ -104,6 +104,9 @@ body {
 body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
     background-color: #F8F5E4;
     color: #2D2D2A;
 
@@ -135,6 +138,7 @@ body {
     gap: 3rem;
     margin: 0 auto;
     max-width: 1100px;
+    color: black;
 }
 
 .about-content img {
@@ -329,7 +333,7 @@ body {
 }
 
 .contact-form {
-    background-color: #F8F5E4;
+    background-color: #DFD4B5;
     border-radius: 5px;
     padding: 20px;
     width: 80%;
@@ -338,9 +342,16 @@ body {
     margin: 20px auto;
 }
 
+.contact img {
+    float: right;
+    width: 200px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
 label {
     margin-bottom: 8px;
-    color: #2D2D2A;
+    color: black;
     display: block;
     font-weight: 500;
     text-align: left;
@@ -350,7 +361,7 @@ input, textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 18px;
-    border: 1px solid #ddd;
+    border: 1px solid #abbf5e;
     border-radius: 4px;
     font-size: 16px;
     box-sizing: border-box;
@@ -362,7 +373,7 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #3b82f6;
+    background-color: #0D7348;
     color: white;
     padding: 12px 30px;
     border: none;
@@ -372,11 +383,10 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #2563eb;
+    background-color: #104F3E;
 }
 
 button {
-    background-color: #007bff;
     font-size: 16px;
     padding: 10px 20px;
     border: none;
@@ -384,9 +394,9 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+/* button:hover {
     background-color: #0056b3;
-}
+} */
 
 .about-text,
 .goals-text,
@@ -416,6 +426,7 @@ button:hover {
     margin-bottom: 1.5rem;
     line-height: 1.6;
     flex: 1;
+    color: black;
 }
 
 .about-me hr {
@@ -448,11 +459,12 @@ button:hover {
 }
 
 .footer {
-    background-color: #3d6e58;
+    background-color: #406768;
     color: #F8F5E4;
     text-align: center;
     padding: 15px;
     margin: 0;
+    margin-top: auto;
 }
 
 .footer p {
