@@ -1,11 +1,13 @@
 #navbar {
     overflow: hidden;
+    /* hides what goes outside the element's box */
     background-color: #406768;
     padding: 6px;
     transition: 0.4s;
     position: fixed;
     width: 100%;
     top: 0;
+    /* keeps navbar at the top */
     justify-content: center;
 
 
@@ -17,8 +19,10 @@
     text-align: center;
     padding: 12px;
     text-decoration: none;
+    /* removes default underline */
     font-size: 15px;
     line-height: 20px;
+    /* spacing */
     border-radius: 4px;
 }
 
@@ -74,6 +78,7 @@
 }
 
 .buttons {
+    /* spacing around button */
     margin: 20px;
 }
 
@@ -98,13 +103,16 @@
 html,
 body {
     scroll-behavior: smooth;
+    /* adds space */
     scroll-margin-top: 60px;
 }
 
 body {
     margin: 0;
     padding: 0;
+    /* makes page at least as tall as the screen */
     min-height: 100vh;
+    /* help footer sit at the bottom */
     flex-direction: column;
     display: flex;
     background-color: #F8F5E4;
@@ -113,29 +121,29 @@ body {
 }
 
 .about-me {
-    /* margin-top: 0px; */
     background-color: #F5D7B6;
-    /* align-items: center; */
+    /* rem handles spacing */
     padding: 4rem 8%;
     margin: 0;
 }
 
 .about-content {
     display: flex;
-    /* lines up top of text and image */
+    /* makes it easy to change other sylings */
     align-items: flex-start;
-    /* space between text and image */
+    /* lines up the top of text and image */
     gap: 3rem;
+    /* space between text and image */
     margin: 0 auto;
     max-width: 1100px;
 }
 
 .hobbies-content {
     display: flex;
-    /* lines up top of text and image */
     align-items: flex-start;
-    /* space between text and image */
+    /* lines up the top of text and image */
     gap: 3rem;
+    /* space between text and image */
     margin: 0 auto;
     max-width: 1100px;
     color: black;
@@ -152,10 +160,7 @@ body {
 }
 
 .goals {
-    /* margin-top: 0px; */
     background-color: #6B9080;
-    /* background-color: rgb(108, 193, 224); */
-    /* align-items: center; */
     gap: 1.5rem 8% 3rem 8;
     margin: 0;
     padding-top: 80px;
@@ -163,6 +168,7 @@ body {
 
 }
 
+/* Arranges the text and image side by side */
 .goals-content {
     display: flex;
     align-items: flex-start;
@@ -179,6 +185,7 @@ body {
     margin: 0;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    /* controls space between line and text */
     flex: 1;
 }
 
@@ -198,13 +205,14 @@ body {
 
 .knowledge-content {
     display: flex;
+    /* used to be able to postion items */
     justify-content: center;
-    /* space between cards */
     gap: 2rem;
+    /* space between cards */
     margin: 0 auto;
     max-width: 1100px;
-    /* stack on mobile */
     flex-wrap: wrap;
+    /* tells item to move to a new line */
 }
 
 .knowledge h2 {
@@ -235,17 +243,20 @@ body {
     line-height: 1.6;
     flex: 1;
     position: relative;
+    /* makes element stay in normal position but can be moved */
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
 }
 
+/* image and icon */
 .skill-card {
     width: 45%;
     max-width: none;
     min-width: 200px;
 }
 
+/* background */
 .skill-icon {
     background-color: white;
     width: 90px;
@@ -265,8 +276,6 @@ body {
 .projects {
     background-color: #A3C4BC;
     padding: 70px 8%;
-    /* padding-top: 10px;
-    padding-bottom: 30px; */
     margin: 0;
     text-align: center;
 }
@@ -280,6 +289,7 @@ body {
 
 .projects-content {
     display: flex;
+    /* used to place cards in rows */
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
@@ -294,6 +304,7 @@ body {
 }
 
 .project-card:hover {
+    /* makes card larger on hover */
     transform: scale(1.05);
 }
 
@@ -352,6 +363,7 @@ body {
 label {
     margin-bottom: 8px;
     color: black;
+    /* allows label to take up its own line */
     display: block;
     font-weight: 500;
     text-align: left;
@@ -368,6 +380,7 @@ input, textarea {
 }
 
 textarea {
+    /* make the box grow with its content */
     resize: vertical;
     min-height: 100px;
 }
@@ -393,10 +406,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
-/* button:hover {
-    background-color: #0056b3;
-} */
 
 .about-text,
 .goals-text,
@@ -461,6 +470,11 @@ button {
 .footer {
     background-color: #406768;
     color: #F8F5E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
     text-align: center;
     padding: 15px;
     margin: 0;
@@ -468,6 +482,18 @@ button {
 }
 
 .footer p {
-    margin: 0 15px 0;
+    margin: 0;
     font-size: 14px;
+}
+
+.footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: lightpink;
 }
